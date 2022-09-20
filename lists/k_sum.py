@@ -1,4 +1,4 @@
-def bf_ksum(lst, k):
+def ksum1(lst, k):
     """
     This is a brute force solution.
     We iterate over every element of lst and compare it with the remaining items
@@ -33,7 +33,7 @@ def bf_ksum(lst, k):
     return buffer
 
 
-def opt_ksum(lst, k):
+def ksum2(lst, k):
     """
     This is an optimised solution.
     We sort the array and maintain two pointers (i,j) at front and end of list a
@@ -70,5 +70,5 @@ def opt_ksum(lst, k):
 numbers = [1, 21, 3, 14, 5, 60, 7, 6]
 target = 25
 
-result = opt_ksum(numbers, target)
+result = ksum2(numbers, target)
 print(result)

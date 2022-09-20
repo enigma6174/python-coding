@@ -1,4 +1,4 @@
-def bf_multiply(lst):
+def multiply1(lst):
     """
     Brute force solution
     For every element of the array calculate the product of the rest
@@ -29,7 +29,7 @@ def bf_multiply(lst):
     return buffer
 
 
-def opt_multiply(lst):
+def multiply2(lst):
     """
     Optimized solution
     Calculate the product of the array in the first pass
@@ -80,5 +80,5 @@ def opt_multiply(lst):
 
 
 arr = [2, 4, 0, 5, 0]
-res = opt_multiply(arr)
+res = multiply2(arr)
 print(res)
